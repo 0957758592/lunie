@@ -3,25 +3,26 @@
   width: 100%;
   padding: 0;
   table-layout: fixed;
+  background: var(--white);
 }
 
 .data-table tr td:first-child::before {
   position: absolute;
   font-size: var(--sm);
   text-align: right;
-  color: var(--dim);
+  color: var(--dim-black);
   left: -1.5rem;
 }
 
 .data-table th:first-child {
   width: 5%;
-  color: var(--dim);
+  color: var(--dim-black);
   font-size: var(--sm)
 }
 
 .data-table th:nth-child(2) {
   width: 10%;
-  color: var(--dim);
+  color: var(--dim-black);
   font-size: var(--sm)
 }
 

@@ -1,9 +1,6 @@
 <template>
   <PageContainer
     :managed="true"
-    :loading="$apollo.queries.validators.loading"
-    :loaded="!$apollo.queries.validators.loading"
-    :error="$apollo.queries.validators.error"
     :data-empty="validators && validators.length === 0"
     hide-header
   >
@@ -45,7 +42,7 @@
 
 <script>
 import { mapState } from "vuex"
-import { ValidatorByName, AllValidatorsResult } from "src/gql"
+import axios from "axios"
 import TableValidators from "staking/TableValidators"
 import PageContainer from "common/PageContainer"
 import TmField from "common/TmField"
@@ -67,23 +64,11 @@ export default {
   computed: {
     ...mapState({ network: state => state.connection.network })
   },
-  apollo: {
-    validators: {
-      query() {
-        /* istanbul ignore next */
-        return ValidatorByName(this.network)(this.activeOnly)
-      },
-      update(data) {
-        /* istanbul ignore next */
-        return AllValidatorsResult(this.network)(data)
-      },
-      variables() {
-        /* istanbul ignore next */
-        return {
-          monikerName: `%${this.searchTerm}%`
-        }
-      }
-    }
+  async mounted() {
+    const res = await axios.get(
+      "https://us-central1-staking-explorer.cloudfunctions.net/validators"
+    )
+    this.validators = res.data.validators
   }
 }
 </script>

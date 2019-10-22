@@ -5,7 +5,7 @@
         <a href="https://lunie.io">
           <img
             class="header-item-logo"
-            src="~assets/images/lunie-logo-white.svg"
+            src="~assets/images/harmony-logo.png"
             alt="Lunie spaceship accelerating into a colourful space sky"
           />
           Lunie
@@ -104,7 +104,7 @@ export default {
 }
 
 .header-item-logo {
-  height: 2rem;
+  height: 5rem;
 }
 
 @media screen and (max-width: 1023px) {
@@ -129,7 +129,7 @@ export default {
   }
 
   .header-item-logo {
-    height: 1.75rem;
+    height: 3rem;
   }
 }
 

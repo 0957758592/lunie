@@ -95,7 +95,7 @@ export default {
   cursor: pointer;
   user-select: none;
   white-space: nowrap;
-  color: var(--dim);
+  color: var(--dim-black);
 }
 
 .sort-by a:hover {
@@ -103,7 +103,7 @@ export default {
 }
 
 .sort-by.active a {
-  color: var(--tertiary);
+  color: var(--txt-black);
 }
 
 .sort-by.asc i {

@@ -125,12 +125,6 @@ export default {
     }
   },
   watch: {
-    lastHeader: {
-      immediate: true,
-      handler() {
-        this.$store.dispatch(`getRewardsFromMyValidators`)
-      }
-    },
     "sort.property": function() {
       this.showing = 15
     },

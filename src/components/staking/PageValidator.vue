@@ -417,6 +417,7 @@ export default {
   align-items: center;
   padding: 1rem;
   border-bottom: 1px solid var(--bc-dim);
+  color: var(--txt-black);
 }
 
 .li-validator-image {

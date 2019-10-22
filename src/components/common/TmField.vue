@@ -195,7 +195,7 @@ input[type="checkbox"] {
   background: var(--input-bg);
   border: 2px solid var(--input-bc);
   border-radius: 0;
-  color: var(--txt, #333);
+  color: var(--txt-black, #333);
   display: block;
   font-size: 14px;
   min-width: 0;
@@ -222,7 +222,7 @@ input[type="checkbox"] {
 }
 
 .tm-field::placeholder {
-  color: var(--dim);
+  color: var(--dim-black);
 }
 
 .tm-field:disabled {

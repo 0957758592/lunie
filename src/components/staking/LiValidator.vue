@@ -117,6 +117,7 @@ export default {
   margin-bottom: 0.25rem;
   border-bottom: 1px solid var(--bc-dim);
   border-radius: 0.25rem;
+  color: var(--txt-black);
 }
 
 .li-validator:last-child {
@@ -151,7 +152,7 @@ export default {
   font-size: 1rem;
   line-height: 18px;
   font-weight: 500;
-  color: var(--bright);
+  color: var(--txt-black);
   display: inline-block;
 }
 
