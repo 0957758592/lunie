@@ -73,14 +73,16 @@ export default {
 
 .button.secondary.active {
   background: var(--primary-dark);
+  border: 2px solid var(--primary-dark);
 }
 
 .button.secondary {
-  background: var(--primary-alpha);
+  background: var(--primary);
 }
 
 .button.secondary:hover {
-  background: var(--primary-dark);
+  background: var(--primary-hover);
+  border: 2px solid var(--primary-hover);
 }
 
 .button.secondary.small {

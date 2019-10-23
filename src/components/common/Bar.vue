@@ -74,7 +74,7 @@ export default {
 
 .bar .link {
   text-decoration: underline;
-  color: var(--bright);
+  color: var(--bright-blue);
   cursor: pointer;
 }
 
